@@ -70,5 +70,4 @@ COPY --from=build-backend /venv /venv
 
 COPY backend/start.sh backend/manage.sh /
 RUN chmod +x /start.sh /manage.sh
-EXPOSE 9090
 CMD ["/start.sh"]
